@@ -102,13 +102,9 @@ app.post("/verify-payment", (req, res) => {
     res
       .status(500)
       .json({ status: "error", message: "Error verifying payment" });
-
   }
-
 });
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
-
-
 });
